@@ -9,8 +9,8 @@ AWS_DEFAULT_REGION = 'us-east-1'
 AWS_CREDENTIAL_PATH = f'{Path.home()}/.aws/credentials'
 sso_start_url = ''
 
-client = boto3.client('sso-oidc')
-sso_client = boto3.client('sso')
+client = boto3.client('sso-oidc', region_name=AWS_DEFAULT_REGION)
+sso_client = boto3.client('sso', region_name=AWS_DEFAULT_REGION)
 
 def read_config(path):
     config = SafeConfigParser()
