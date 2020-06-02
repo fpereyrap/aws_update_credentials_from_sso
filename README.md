@@ -12,7 +12,7 @@ Each time you run the script it will update each file but not overwrite it.
 
 ## Configuration
 
-Before running the script its important to update the _settings file_.
+Before running the script its **important** to update the _settings_ file.
 
 * In _SSO_START_URL_ setting replace the `[YOUR_COMPANY]` value with the corresponding.
 

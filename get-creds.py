@@ -94,13 +94,12 @@ def get_roles_credentials(rolename, accountid, token):
 
 
 def update_aws_credentials(profile_name, profile, credentials):
-    region = AWS_DEFAULT_REGION
     config = read_config(AWS_CREDENTIAL_PATH)
     full_name = profile_name + "-" + profile
     if config.has_section(full_name):
         config.remove_section(full_name)
     config.add_section(full_name)
-    config.set(full_name, "region", region)
+    config.set(full_name, "region", AWS_DEFAULT_REGION)
     config.set(full_name, "aws_access_key_id", credentials["accessKeyId"])
     config.set(full_name, "aws_secret_access_key ", credentials["secretAccessKey"])
     config.set(full_name, "aws_session_token", credentials["sessionToken"])
