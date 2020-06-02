@@ -12,21 +12,19 @@ Each time you run the script it will update each file but not overwrite it.
 
 ## Configuration
 
-Before running the script its important to update line 10 with the sso start url as shown below:
+Before running the script its **important** to update the _settings_ file.
 
-    sso_start_url = 'https://cloud(your_company).awsapps.com/start#/'
+* In _SSO_START_URL_ setting replace the `[YOUR_COMPANY]` value with the corresponding.
 
-If you would like to update the default region you can do thtat by updating the line 8 as shown below:
-
-    AWS_DEFAULT_REGION = 'us-east-1'
+* You can to update the default region too.
 
 ## Usage
 
-1. Run python3  get-creds.py
+1. Run `python3 get-creds.py`
 2. It will take you to the SSO login page. 
 3. Enter your credentials.
 4. When asked to back to the terminal and press enter. 
-5. And thats it! :) 
+5. And that's it! :) 
 
 ## References: 
 
